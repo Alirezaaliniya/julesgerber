@@ -1,0 +1,146 @@
+/* GerberNAMA Plugin Styles */
+/* Ensure LTR direction for plugin elements */
+
+#gerbernama-upload-form-container,
+#gerbernama-preview-container {
+    direction: ltr;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 700px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the container */
+}
+
+#gerbernama-upload-form-container h2,
+#gerbernama-preview-container h2 {
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#gerbernama-upload-form-container h3,
+#gerbernama-preview-container h3 {
+   color: #444;
+   margin-top: 25px;
+}
+
+#gerbernama-upload-form p,
+#gerbernama-preview-container p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#gerbernama-upload-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#gerbernama-upload-form input[type="text"],
+#gerbernama-upload-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#gerbernama-upload-form input[type="file"] {
+   padding: 3px; /* File inputs are a bit different */
+}
+
+
+#gerbernama-upload-form input[type="submit"] {
+    background-color: #0073aa; /* WordPress blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#gerbernama-upload-form input[type="submit"]:hover {
+    background-color: #005a87;
+}
+
+#gerbernama-upload-form input[type="submit"]:disabled {
+   background-color: #aaa;
+   cursor: not-allowed;
+}
+
+#gerbernama-form-feedback p.error,
+#gerbernama-preview-container p.error {
+    color: #d9534f; /* Bootstrap danger color */
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#gerbernama-form-feedback p.success {
+    color: #3c763d; /* Bootstrap success color */
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#gerber-viewer-target {
+    width: 100%;
+    height: 500px; /* Default height, can be overridden by JS options */
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative; /* For potential absolute positioning of internal viewer elements */
+    background-color: #f0f0f0; /* Light background for the viewer area */
+}
+
+#gerber-viewer-target p { /* For messages inside the viewer target */
+   text-align: center;
+   padding-top: 20px;
+   font-style: italic;
+}
+
+#gerbernama-preview-container ul {
+   list-style: disc;
+   margin-left: 20px;
+   padding-left: 0;
+}
+
+#gerbernama-preview-container ul li {
+   margin-bottom: 8px;
+}
+
+#gerbernama-preview-container ul li a {
+   margin-left: 10px;
+   text-decoration: none;
+   color: #0073aa;
+   font-size: 0.9em;
+}
+#gerbernama-preview-container ul li a:hover {
+   text-decoration: underline;
+}
+
+/* Link styled as a button */
+.gerbernama-button-link {
+    display: inline-block;
+    background-color: #0073aa;
+    color: white !important; /* important to override default link colors */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.gerbernama-button-link:hover {
+    background-color: #005a87;
+    color: white !important;
+    text-decoration: none;
+}
